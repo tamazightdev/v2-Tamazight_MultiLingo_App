@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: 12,
-    backgroundColor: 'rgba(184, 184, 184, 0.3)', // Medium gray from gradient
+    backgroundColor: 'rgba(184, 184, 184, 0.4)', // Medium gray from gradient
     borderRadius: 12,
     borderWidth: 1,
     borderColor: 'rgba(255, 255, 255, 0.2)',
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
     width: 48,
     height: 48,
     borderRadius: 24,
-    backgroundColor: 'rgba(156, 28, 39, 0.6)', // Moroccan red
+    backgroundColor: 'rgba(156, 28, 39, 0.7)', // Moroccan red
     justifyContent: 'center',
     alignItems: 'center',
     marginHorizontal: 16,
@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
   modalContent: {
-    backgroundColor: 'rgba(156, 28, 39, 0.9)', // Moroccan red modal
+    backgroundColor: 'rgba(156, 28, 39, 0.95)', // Moroccan red modal
     borderRadius: 12,
     padding: 20,
     width: '80%',
@@ -167,6 +167,7 @@ const styles = StyleSheet.create({
   modalItemText: {
     color: '#FFFFFF',
     fontSize: 18,
+    fontFamily: 'Inter-Medium',
   },
   closeButton: {
     marginTop: 20,
@@ -175,6 +176,6 @@ const styles = StyleSheet.create({
   closeButtonText: {
     color: '#FFFFFF',
     fontSize: 18,
-    fontWeight: 'bold',
+    fontFamily: 'Inter-Bold',
   },
 });
