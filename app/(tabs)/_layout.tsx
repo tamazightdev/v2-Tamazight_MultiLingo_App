@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { Languages, History, AlertTriangle, Building2 } from 'lucide-react-native';
+import { Languages, History, TriangleAlert as AlertTriangle, Building2 } from 'lucide-react-native';
 import { View, StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { BlurView } from 'expo-blur';
