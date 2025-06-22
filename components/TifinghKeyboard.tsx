@@ -27,9 +27,10 @@ export function TifinghKeyboard({ onCharacterPress, visible }: TifinghKeyboardPr
   };
 
   return (
-    <GlassCard style={styles.container}>
+    <GlassCard style={styles.container} variant="strong">
       <View style={styles.header}>
         <Text style={styles.title}>Tifinagh Keyboard</Text>
+        <Text style={styles.subtitle}>ⵜⴰⵎⴰⵣⵉⵖⵜ</Text>
       </View>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <View style={styles.keyboard}>
@@ -58,11 +59,21 @@ const styles = StyleSheet.create({
   },
   header: {
     marginBottom: 16,
+    alignItems: 'center',
   },
   title: {
     color: '#FFFFFF',
     fontSize: 18,
     fontFamily: 'Inter-SemiBold',
+    textShadowColor: 'rgba(0, 0, 0, 0.3)',
+    textShadowOffset: { width: 0, height: 1 },
+    textShadowRadius: 2,
+  },
+  subtitle: {
+    color: 'rgba(255, 255, 255, 0.8)',
+    fontSize: 14,
+    fontFamily: 'Inter-Regular',
+    marginTop: 4,
   },
   keyboard: {
     gap: 8,
@@ -74,16 +85,24 @@ const styles = StyleSheet.create({
   key: {
     width: 44,
     height: 44,
-    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    backgroundColor: 'rgba(255, 255, 255, 0.25)',
     borderRadius: 8,
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.3)',
+    borderColor: 'rgba(255, 255, 255, 0.4)',
+    shadowColor: 'rgba(156, 28, 39, 0.3)',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    elevation: 4,
   },
   keyText: {
     color: '#FFFFFF',
     fontSize: 20,
     fontFamily: 'Inter-Bold',
+    textShadowColor: 'rgba(0, 0, 0, 0.3)',
+    textShadowOffset: { width: 0, height: 1 },
+    textShadowRadius: 2,
   },
 });

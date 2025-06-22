@@ -38,7 +38,7 @@ export function LanguageSelector({
   };
 
   return (
-    <GlassCard style={styles.container}>
+    <GlassCard style={styles.container} variant="default">
       <View style={styles.selectorRow}>
         <TouchableOpacity style={styles.languageButton} onPress={() => setFromModalVisible(true)}>
           <Text style={styles.languageText}>{fromLanguage}</Text>
@@ -126,54 +126,76 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: 12,
-    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    backgroundColor: 'rgba(255, 255, 255, 0.15)',
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.2)',
+    borderColor: 'rgba(255, 255, 255, 0.3)',
+    shadowColor: 'rgba(156, 28, 39, 0.2)',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    elevation: 4,
   },
   languageText: {
     color: '#FFFFFF',
     fontSize: 16,
     fontFamily: 'Inter-Medium',
     flex: 1,
+    textShadowColor: 'rgba(0, 0, 0, 0.3)',
+    textShadowOffset: { width: 0, height: 1 },
+    textShadowRadius: 2,
   },
   swapButton: {
     width: 48,
     height: 48,
     borderRadius: 24,
-    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    backgroundColor: 'rgba(193, 39, 45, 0.8)',
     justifyContent: 'center',
     alignItems: 'center',
     marginHorizontal: 16,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.3)',
+    shadowColor: 'rgba(156, 28, 39, 0.4)',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.4,
+    shadowRadius: 8,
+    elevation: 8,
   },
   modalContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
   },
   modalContent: {
-    backgroundColor: '#2D3748',
-    borderRadius: 12,
+    backgroundColor: 'rgba(156, 28, 39, 0.95)',
+    borderRadius: 16,
     padding: 20,
     width: '80%',
     maxHeight: '60%',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.2)',
   },
   modalItem: {
     paddingVertical: 15,
     borderBottomWidth: 1,
-    borderBottomColor: '#4A5568',
+    borderBottomColor: 'rgba(255, 255, 255, 0.2)',
   },
   modalItemText: {
     color: '#FFFFFF',
     fontSize: 18,
+    fontFamily: 'Inter-Medium',
   },
   closeButton: {
     marginTop: 20,
     alignItems: 'center',
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    borderRadius: 12,
+    paddingVertical: 12,
   },
   closeButtonText: {
-    color: '#38B2AC',
+    color: '#FFFFFF',
     fontSize: 18,
+    fontFamily: 'Inter-SemiBold',
   },
 });

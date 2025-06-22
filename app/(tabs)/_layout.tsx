@@ -22,23 +22,31 @@ export default function TabLayout() {
         tabBarBackground: () => (
           <View style={StyleSheet.absoluteFillObject}>
             <LinearGradient
-              colors={['rgba(67, 56, 202, 0.95)', 'rgba(219, 39, 119, 0.95)']}
+              colors={[
+                'rgba(148, 199, 217, 0.95)', // Ocean breeze
+                'rgba(156, 28, 39, 0.95)',   // Deep crimson
+                'rgba(193, 39, 45, 0.95)'    // Bright red
+              ]}
+              locations={[0, 0.6, 1]}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 1 }}
               style={StyleSheet.absoluteFillObject}
             />
             <BlurView
-              intensity={20}
+              intensity={25}
               style={StyleSheet.absoluteFillObject}
             />
           </View>
         ),
         tabBarActiveTintColor: '#FFFFFF',
-        tabBarInactiveTintColor: 'rgba(255, 255, 255, 0.6)',
+        tabBarInactiveTintColor: 'rgba(255, 255, 255, 0.7)',
         tabBarLabelStyle: {
           fontFamily: 'Inter-Medium',
           fontSize: 12,
           marginBottom: 8,
+          textShadowColor: 'rgba(0, 0, 0, 0.3)',
+          textShadowOffset: { width: 0, height: 1 },
+          textShadowRadius: 2,
         },
         tabBarIconStyle: {
           marginTop: 8,
