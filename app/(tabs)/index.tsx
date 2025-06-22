@@ -47,7 +47,7 @@ export default function TranslateScreen() {
 
   return (
     <View style={styles.container}>
-      <GradientBackground variant="moroccan">
+      <GradientBackground>
         <SafeAreaView style={styles.safeArea}>
           <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>
             <View style={styles.header}>
@@ -116,9 +116,9 @@ export default function TranslateScreen() {
             )}
 
             {outputText && (
-              <GlassCard style={styles.aiInfo} variant="subtle">
+              <GlassCard style={styles.aiInfo}>
                 <View style={styles.aiRow}>
-                  <Zap size={16} color="rgba(193, 39, 45, 0.9)" strokeWidth={2} />
+                  <Zap size={16} color="#10B981" strokeWidth={2} />
                   <Text style={styles.aiText}>
                     Translated offline using Gemma-3 AI • Processing time: 1.2s
                   </Text>
@@ -162,55 +162,39 @@ const styles = StyleSheet.create({
   controlButton: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.25)',
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
     borderRadius: 12,
     padding: 12,
     minWidth: 80,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.4)',
-    shadowColor: 'rgba(156, 28, 39, 0.3)',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.3,
-    shadowRadius: 4,
-    elevation: 4,
+    borderColor: 'rgba(255, 255, 255, 0.3)',
   },
   controlText: {
     color: '#FFFFFF',
     fontSize: 12,
     fontFamily: 'Inter-Medium',
     marginTop: 4,
-    textShadowColor: 'rgba(0, 0, 0, 0.3)',
-    textShadowOffset: { width: 0, height: 1 },
-    textShadowRadius: 2,
   },
   translateButton: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(193, 39, 45, 0.9)',
+    backgroundColor: 'rgba(16, 185, 129, 0.8)',
     borderRadius: 16,
     paddingVertical: 16,
     paddingHorizontal: 24,
     flex: 1,
     gap: 8,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.4)',
-    shadowColor: 'rgba(156, 28, 39, 0.5)',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.4,
-    shadowRadius: 8,
-    elevation: 8,
+    borderColor: 'rgba(255, 255, 255, 0.3)',
   },
   translating: {
-    backgroundColor: 'rgba(148, 199, 217, 0.9)',
+    backgroundColor: 'rgba(245, 158, 11, 0.8)',
   },
   translateText: {
     color: '#FFFFFF',
     fontSize: 16,
     fontFamily: 'Inter-SemiBold',
-    textShadowColor: 'rgba(0, 0, 0, 0.3)',
-    textShadowOffset: { width: 0, height: 1 },
-    textShadowRadius: 2,
   },
   aiInfo: {
     marginTop: 16,
@@ -221,12 +205,9 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   aiText: {
-    color: 'rgba(255, 255, 255, 0.95)',
+    color: 'rgba(255, 255, 255, 0.8)',
     fontSize: 14,
     fontFamily: 'Inter-Regular',
     flex: 1,
-    textShadowColor: 'rgba(0, 0, 0, 0.2)',
-    textShadowOffset: { width: 0, height: 1 },
-    textShadowRadius: 1,
   },
 });

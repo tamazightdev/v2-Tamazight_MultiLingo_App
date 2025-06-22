@@ -67,7 +67,7 @@ export function TranslationInput({
   };
 
   return (
-    <GlassCard style={styles.container} variant={isOutput ? 'strong' : 'default'}>
+    <GlassCard style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.languageLabel}>{language}</Text>
         <View style={styles.actions}>
@@ -101,7 +101,7 @@ export function TranslationInput({
         value={value}
         onChangeText={onChangeText}
         placeholder={placeholder}
-        placeholderTextColor="rgba(255, 255, 255, 0.7)"
+        placeholderTextColor="rgba(255, 255, 255, 0.6)"
         multiline
         editable={!isOutput}
         textAlignVertical="top"
@@ -124,9 +124,6 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 16,
     fontFamily: 'Inter-SemiBold',
-    textShadowColor: 'rgba(0, 0, 0, 0.3)',
-    textShadowOffset: { width: 0, height: 1 },
-    textShadowRadius: 2,
   },
   actions: {
     flexDirection: 'row',
@@ -136,19 +133,12 @@ const styles = StyleSheet.create({
     width: 36,
     height: 36,
     borderRadius: 18,
-    backgroundColor: 'rgba(255, 255, 255, 0.25)',
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.3)',
-    shadowColor: 'rgba(156, 28, 39, 0.3)',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.3,
-    shadowRadius: 4,
-    elevation: 4,
   },
   recording: {
-    backgroundColor: 'rgba(193, 39, 45, 0.9)',
+    backgroundColor: '#EF4444',
   },
   input: {
     color: '#FFFFFF',
@@ -156,8 +146,5 @@ const styles = StyleSheet.create({
     fontFamily: 'Inter-Regular',
     minHeight: 80,
     textAlignVertical: 'top',
-    textShadowColor: 'rgba(0, 0, 0, 0.2)',
-    textShadowOffset: { width: 0, height: 1 },
-    textShadowRadius: 1,
   },
 });
