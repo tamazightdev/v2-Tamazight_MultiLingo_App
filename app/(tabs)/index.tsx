@@ -118,7 +118,7 @@ export default function TranslateScreen() {
             {outputText && (
               <GlassCard style={styles.aiInfo}>
                 <View style={styles.aiRow}>
-                  <Zap size={16} color="#10B981" strokeWidth={2} />
+                  <Zap size={16} color="#C1272D" strokeWidth={2} />
                   <Text style={styles.aiText}>
                     Translated offline using Gemma-3 AI • Processing time: 1.2s
                   </Text>
@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
   controlButton: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    backgroundColor: 'rgba(184, 184, 184, 0.4)', // Medium gray from gradient
     borderRadius: 12,
     padding: 12,
     minWidth: 80,
@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(16, 185, 129, 0.8)',
+    backgroundColor: 'rgba(156, 28, 39, 0.8)', // Moroccan red translate button
     borderRadius: 16,
     paddingVertical: 16,
     paddingHorizontal: 24,
@@ -189,7 +189,7 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(255, 255, 255, 0.3)',
   },
   translating: {
-    backgroundColor: 'rgba(245, 158, 11, 0.8)',
+    backgroundColor: 'rgba(193, 39, 45, 0.8)', // Bright red when translating
   },
   translateText: {
     color: '#FFFFFF',

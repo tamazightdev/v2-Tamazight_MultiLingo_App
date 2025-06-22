@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   key: {
     width: 44,
     height: 44,
-    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    backgroundColor: 'rgba(156, 28, 39, 0.5)', // Moroccan red keys
     borderRadius: 8,
     justifyContent: 'center',
     alignItems: 'center',

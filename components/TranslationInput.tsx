@@ -133,12 +133,12 @@ const styles = StyleSheet.create({
     width: 36,
     height: 36,
     borderRadius: 18,
-    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    backgroundColor: 'rgba(156, 28, 39, 0.6)', // Moroccan red accent
     justifyContent: 'center',
     alignItems: 'center',
   },
   recording: {
-    backgroundColor: '#EF4444',
+    backgroundColor: '#C1272D', // Bright red for recording state
   },
   input: {
     color: '#FFFFFF',
